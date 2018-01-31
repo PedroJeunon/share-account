@@ -1,0 +1,143 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Componentes utilizados
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <!-- Botao FAB para inclusao de conta. Deixei a lista caso pensamos em algo -->
+    <ion-fab right bottom>
+        <button ion-fab>Button</button>
+        <ion-fab-list side="top">
+            <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+            <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+            <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
+            <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+        </ion-fab-list>
+    </ion-fab>
+
+    <!-- Tipo de botao para escolher para ações de salvar -->
+    <h4> Botões</h4>
+    <button ion-button>Botao 1</button>
+    <button ion-button outline>Botao 2</button>
+    <button ion-button clear>Botao 3</button>
+    <button ion-button round>Botao 4</button>
+    <button ion-button block>Botao 5</button>
+    <button ion-button block round outline>Botao 6</button>
+
+    <h4> Inputs </h4>
+    <ion-item>
+        <ion-label floating>Text</ion-label>
+        <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label>Label</ion-label>
+        <ion-select>
+            <ion-option value="sel1">Select 1</ion-option>
+            <ion-option value="sel2">Select 2</ion-option>
+            <ion-option value="sel3">Select 3</ion-option>
+            <ion-option value="sel4">Select 4</ion-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Data</ion-label>
+        <ion-datetime displayFormat="DD MMMM YYYY" pickerFormat="DD/MMMM/YYYY"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+        <ion-label> Salvar na nuvem?</ion-label>
+        <ion-toggle></ion-toggle>
+    </ion-item>
+
+    <h4> Card </h4>
+    <ion-card>
+
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="assets/imgs/icon-nu.png">
+            </ion-avatar>
+            <h2>Bank 1</h2>
+            <p>Ag: 11111 Conta: 111111</p>
+        </ion-item>
+        <ion-row>
+            <ion-col>
+                <button ion-button icon-left clear small>
+                <ion-icon name="share"></ion-icon>
+              </button>
+            </ion-col>
+            <ion-col>
+                <button ion-button icon-left clear small>
+                <ion-icon name="create"></ion-icon>
+              </button>
+            </ion-col>
+            <ion-col>
+                <button ion-button icon-right clear small>
+                <ion-icon name="trash"></ion-icon>
+              </button>
+            </ion-col>
+        </ion-row>
+    </ion-card>
+    <ion-card>
+        <ion-item>
+            <ion-avatar item-start>
+                <img src='assets/imgs/itau.png'>
+            </ion-avatar>
+            <h2>Bank 2</h2>
+            <p>Ag: 22222 Conta: 222222</p>
+        </ion-item>
+        <ion-row>
+            <ion-col>
+                <button ion-button icon-left clear small>
+                <ion-icon name="share"></ion-icon>
+              </button>
+            </ion-col>
+            <ion-col>
+                <button ion-button icon-center clear small>
+                <ion-icon name="create"></ion-icon>
+              </button>
+            </ion-col>
+            <ion-col>
+                <button ion-button icon-right clear small>
+                <ion-icon name="trash"></ion-icon>
+              </button>
+            </ion-col>
+        </ion-row>
+    </ion-card>
+
+    <!-- Icones podem ser encontrados no ionicons -->
+    <!-- https://ionicframework.com/docs/ionicons/ -->
+    <h4> List </h4>
+    <ion-list>
+        <ion-item-sliding #item>
+            <ion-item>
+                <ion-avatar item-start>
+                    <img src='assets/imgs/itau.png'>
+                </ion-avatar>
+                <h2>Itau Unibanco S/A</h2>
+                <p>Ag: 22222 Conta: 222222</p>
+            </ion-item>
+            <ion-item-options side="right">
+                <button ion-button color="secondary"><ion-icon name="share"></ion-icon></button>
+                <button ion-button color="light"><ion-icon name="create"></ion-icon></button>
+                <button ion-button color="danger"><ion-icon name="trash"></ion-icon></button>
+            </ion-item-options>
+        </ion-item-sliding>
+        <ion-item-sliding #item>
+            <ion-item>
+                <ion-avatar item-start>
+                    <img src='assets/imgs/icon-nu.png'>
+                </ion-avatar>
+                <h2>Nu Conta</h2>
+                <p>Ag: 22222 Conta: 222222</p>
+            </ion-item>
+            <ion-item-options side="right">
+                <button ion-button color="secondary"><ion-icon name="share"></ion-icon></button>
+                <button ion-button color="light"><ion-icon name="create"></ion-icon></button>
+                <button ion-button color="danger"><ion-icon name="trash"></ion-icon></button>
+            </ion-item-options>
+        </ion-item-sliding>
+    </ion-list>
+</ion-content>
